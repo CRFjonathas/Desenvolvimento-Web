@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário 1</title>
+    </head>
+    <body>
+        <form action="formulario1.html" method="post">
+            <fieldset>
+                <legend>Dados Gerais</legend>
+
+                <label for="nome">Nome:</label>
+                <input type="text" minlength="3" id:"nome" /> <br>
+
+                <label for="data_nascimento">Data de nasciemento:</label>
+                <input type="text" id="data_nascimento" /> <br>
+
+                <label for="cpf">CPF:</label>
+                <input type="cpf" minlength="11" id:"cpf" /> <br>
+            </fieldset>
+            <fieldset>
+                <legend>Endereço</legend>
+
+                <label for="tipo_endereco">Tipo</label>
+                <select id="tipo_endereco">
+                    <option value="">Selecione</option>
+                    <option value="">Rua</option>
+                    <option value="">Estrada</option>
+                    <option value="">Rodovia</option>
+                    <option value="">Outros</option>
+                </select> <br>
+
+                <label for="logradouro_endereco">Logradouro:</label>
+                <input type="text" id="logradouro_endereco" /> <br>
+                
+                <label for="numero_endereco">Numero:</label>
+                <input type="text" id="numero_endereco" /> <br>
+
+                <label for="complemento_endereco">Complemento:</label>
+                <input type="text" id="complemento_endereco" /> <br>
+            </fieldset>
+            <fieldset>
+                <legend>Fale Conosco</legend>
+                <label for="msg">Mensagem:</label>
+                <textarea type="text" id="msg"></textarea>
+            </fieldset>
+            <fieldset>
+                <button type="submit">Enviar sua mensagem</button>
+                <button type="reset">Limpar formulário</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
